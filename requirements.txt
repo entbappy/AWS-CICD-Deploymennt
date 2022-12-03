@@ -1,0 +1,8 @@
+Flask==1.1.2
+ifaddr==0.1.7
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+Werkzeug==1.0.1
+zeroconf==0.28.0
+gunicorn==20.1.0
