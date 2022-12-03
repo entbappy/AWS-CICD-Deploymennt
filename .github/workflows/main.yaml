@@ -86,9 +86,9 @@ jobs:
         run: |
          docker pull ${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
          
-      - name: Stop and remove container if running
-        run: |
-         docker ps -q --filter "name=simpleapp" | grep -q . && docker stop simpleapp && docker rm -fv simpleapp
+      # - name: Stop and remove container if running
+      #   run: |
+      #    docker ps -q --filter "name=simpleapp" | grep -q . && docker stop simpleapp && docker rm -fv simpleapp
        
       - name: Run Docker Image to serve users
         run: |
